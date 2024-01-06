@@ -1,0 +1,8 @@
+---
+    - name: run apt-get on the server
+	  apt: update_cache: yes
+	       
+	- name: Installing latest version of {{package}} on {{operatingSystem}}
+      apt:
+	      name: {{package}}
+		  state: latest

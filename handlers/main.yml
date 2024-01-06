@@ -1,0 +1,7 @@
+---
+# handlers file for ngix
+handlers:
+ - name: restart ngix server
+   service:
+      name={{package}} 
+      state=restarted

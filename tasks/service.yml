@@ -1,0 +1,5 @@
+---
+ - name: start ngix server
+   service:
+      name={{package}} 
+      state=started   
